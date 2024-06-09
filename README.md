@@ -54,7 +54,7 @@ Reconstruct the likely original text based on the OCR output provided. Interpret
 
 ## (5) Temperature
 
-Same as the Vanilla prompt but with the temperature parameter settings at intervals of 0.2, from 0 to 1.2.
+Same as the Vanilla prompt but with the temperature parameter settings at intervals of 0.2, from 0 to 1.2. Note that the temperature at 1 is exactly the baseline.
 
 ## (6) Correctness Aware
 
