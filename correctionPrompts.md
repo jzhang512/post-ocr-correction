@@ -1,4 +1,6 @@
-# System
+# Correction Prompts
+
+## System
 
 ## (1) Universal Prompt
 
@@ -6,7 +8,7 @@
 You are an assistant trained to correct text from OCR outputs that may contain errors. Your task is to reconstruct the likely original text. Restore the text to its original form, including handling non-standard elements that aligns with their intended meaning and use.
 
 
-# User
+## User
 
 ## (2) Vanilla
 
