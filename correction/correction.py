@@ -1,8 +1,7 @@
-import requests
 import sys
 import os
 from openai import OpenAI
-from Processing.token_counter import num_tokens
+from gpt_token_counter import num_tokens
 
 API_ENDPOINT = "https://api.openai.com/v1/completions"
 MODELS = ["gpt-3.5-turbo", "gpt-4", "gpt-4-0125-preview"]
