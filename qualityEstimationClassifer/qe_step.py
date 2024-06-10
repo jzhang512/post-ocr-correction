@@ -152,11 +152,11 @@ def convert_to_png(filenames, directory, save_path):
 
 # Reruns OCR on the files in specified directory using reOCR_tesseract.js.
 # Returns dict in form {work_id: new_ocr}.
-def re_OCR(directory_path):
+def re_OCR(run_directory_path):
     reOCR_file_path = "###FILE PATH TO reOCR_tesseract.js###"
-    result = subprocess.run(["node", reOCR_file_path, directory_path], capture_output=True, text= True)
+    result = subprocess.run(["node", reOCR_file_path, run_directory_path], capture_output=True, text= True)
     
-    segments = result.stdout.strip().split("$%$%$%$%*#DELZ")
+    segments = result.stdout.strip().split("$%$%$%$%*#DELZ")    # $%$%$%$%*#DELZ is delimiter (set in reOCR_tesseract.js)
     new_ocr_dict = {}
 
     for seg in segments:
