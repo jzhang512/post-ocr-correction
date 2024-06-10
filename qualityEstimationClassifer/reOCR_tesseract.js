@@ -1,6 +1,3 @@
-// Set DYLD_LIBRARY_PATH to include the path to libcairo.2.dylib
-process.env.DYLD_LIBRARY_PATH = '/opt/homebrew/lib:' + (process.env.DYLD_LIBRARY_PATH || '');
-
 const fs = require('fs');
 const path = require('path');
 const { createWorker } = require('tesseract.js');
