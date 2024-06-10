@@ -1,2 +1,4 @@
 tiktoken
 openai
+pillow
+pymupdf

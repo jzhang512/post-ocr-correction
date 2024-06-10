@@ -1,0 +1,6 @@
+{
+ "dependencies": {
+   "pdf-poppler": "^0.2.1",
+   "tesseract.js": "^5.0.5"
+ }
+}
